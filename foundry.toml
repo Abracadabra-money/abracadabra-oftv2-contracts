@@ -1,0 +1,17 @@
+[profile.default]
+solc_version = "0.8.26"
+evm_version = "shanghai"
+auto_detect_solc = false
+auto_detect_remappings = false
+deny_warnings = true
+optimizer = true
+optimizer_runs = 400
+src = 'src'
+out = 'out'
+libs = ["dependencies"]
+remappings = [
+    "/=src/",
+    "forge-std/=dependencies/forge-std-1.9.2/src/",
+    "@openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.0.2/",
+    "@solmate/=dependencies/solmate-1.0.0/src/"
+]
