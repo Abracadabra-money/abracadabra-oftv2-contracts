@@ -177,7 +177,7 @@ interface ILzApp {
 
     function minDstGasLookup(
         uint16 _srcChainId,
-        uint16 _dstChainId
+        uint16 _packetType
     ) external view returns (uint);
 
     function setTrustedRemote(
